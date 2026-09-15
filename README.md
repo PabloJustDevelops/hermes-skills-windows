@@ -1,6 +1,6 @@
 # Hermes Skills — Windows Ports
 
-![Hermes Skills — Windows Ports](assets/social-preview.png)
+![Hermes Skills — Windows Ports](assets/banner-windows-ports.png)
 
 Windows-ready ports of three [Hermes Agent](https://github.com/NousResearch/hermes-agent)
 optional skills that upstream ship as `linux, macos` only, plus the local SearXNG setup
