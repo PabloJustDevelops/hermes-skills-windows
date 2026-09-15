@@ -1,79 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Hermes Skills Windows Ports">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Hermes Skills — Windows ports">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1224"/>
-      <stop offset="1" stop-color="#18203C"/>
+    <radialGradient id="ink" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0" stop-color="#1C2231"/>
+      <stop offset="0.6" stop-color="#111621"/>
+      <stop offset="1" stop-color="#080B11"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EBCB6F"/>
+      <stop offset="0.45" stop-color="#D6AC48"/>
+      <stop offset="1" stop-color="#9C7423"/>
     </linearGradient>
-    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
-      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.02"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    <linearGradient id="feather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1DA95"/>
+      <stop offset="1" stop-color="#AA7E24"/>
     </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="9" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="frame">
-      <rect x="8" y="8" width="496" height="496" rx="104"/>
-    </clipPath>
+    <linearGradient id="snakeA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6DA"/>
+      <stop offset="1" stop-color="#DDBB62"/>
+    </linearGradient>
+    <linearGradient id="snakeB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7C56C"/>
+      <stop offset="1" stop-color="#A87F26"/>
+    </linearGradient>
   </defs>
 
-  <!-- window frame -->
-  <g clip-path="url(#frame)">
-    <rect x="8" y="8" width="496" height="496" rx="104" fill="url(#bg)"/>
-    <rect x="8" y="8" width="496" height="496" rx="104" fill="url(#sheen)"/>
-    <!-- title bar: the "window" cue, kept clear of the icons below -->
-    <rect x="8" y="8" width="496" height="84" fill="#FFFFFF" fill-opacity="0.045"/>
-    <line x1="8" y1="92" x2="504" y2="92" stroke="#8FB6FF" stroke-opacity="0.16" stroke-width="2"/>
-  </g>
-  <rect x="9.5" y="9.5" width="493" height="493" rx="102.5" fill="none" stroke="#38BDF8" stroke-opacity="0.38" stroke-width="3"/>
+  <rect width="512" height="512" fill="url(#ink)"/>
+  <circle cx="256" cy="256" r="208" fill="none" stroke="url(#gold)" stroke-width="5"/>
 
-  <!-- window controls, tinted with the three skill accents -->
+  <!-- STAFF: herald's rod — knob on top, plain foot, no nib -->
+  <line x1="256" y1="130" x2="256" y2="392" stroke="#0A0D13" stroke-width="22" stroke-linecap="round"/>
+  <line x1="256" y1="130" x2="256" y2="392" stroke="url(#gold)" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="256" cy="116" r="16" fill="url(#feather)" stroke="#0A0D13" stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="234" y="392" width="44" height="13" rx="6.5" fill="url(#gold)" stroke="#0A0D13" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- wings -->
+  <g fill="url(#feather)" stroke="#7F5C1C" stroke-opacity="0.4" stroke-width="1.4">
+    <path d="M 264 176
+             C 298 154, 336 138, 378 134
+             C 366 148, 356 156, 346 162
+             C 362 168, 370 176, 374 186
+             C 356 184, 340 188, 326 196
+             C 340 206, 346 216, 348 228
+             C 328 220, 310 220, 294 224
+             C 298 238, 298 250, 296 260
+             C 282 242, 272 224, 264 206
+             Z"/>
+    <path d="M 248 176
+             C 214 154, 176 138, 134 134
+             C 146 148, 156 156, 166 162
+             C 150 168, 142 176, 138 186
+             C 156 184, 172 188, 186 196
+             C 172 206, 166 216, 164 228
+             C 184 220, 202 220, 218 224
+             C 214 238, 214 250, 216 260
+             C 230 242, 240 224, 248 206
+             Z"/>
+  </g>
+
+  <!-- SNAKES: rims, bodies, then A's top coil redrawn for a real over/under weave -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 268 358 C 306 342, 306 310, 264 296 C 222 282, 222 250, 264 236 C 306 222, 306 204, 276 196"
+          stroke="#0A0D13" stroke-width="14"/>
+    <path d="M 244 354 C 206 338, 206 306, 248 292 C 290 278, 290 246, 248 232 C 206 218, 206 200, 236 192"
+          stroke="#0A0D13" stroke-width="14"/>
+    <path d="M 268 358 C 306 342, 306 310, 264 296 C 222 282, 222 250, 264 236 C 306 222, 306 204, 276 196"
+          stroke="url(#snakeA)" stroke-width="9"/>
+    <path d="M 244 354 C 206 338, 206 306, 248 292 C 290 278, 290 246, 248 232 C 206 218, 206 200, 236 192"
+          stroke="url(#snakeB)" stroke-width="9"/>
+    <path d="M 264 236 C 306 222, 306 204, 276 196" stroke="#0A0D13" stroke-width="14"/>
+    <path d="M 264 236 C 306 222, 306 204, 276 196" stroke="url(#snakeA)" stroke-width="9"/>
+  </g>
+
+  <!-- heads: bigger, with eyes and a short forked tongue -->
   <g>
-    <circle cx="68" cy="50" r="7" fill="#38BDF8" fill-opacity="0.75"/>
-    <circle cx="104" cy="50" r="7" fill="#A78BFA" fill-opacity="0.75"/>
-    <circle cx="140" cy="50" r="7" fill="#FBBF24" fill-opacity="0.75"/>
-  </g>
-
-  <!-- pane 1: search -->
-  <g transform="translate(112,250)">
-    <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#38BDF8" fill-opacity="0.10" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="3"/>
-    <g fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" filter="url(#glow)">
-      <circle cx="-6" cy="-6" r="25"/>
-      <line x1="12" y1="12" x2="30" y2="30"/>
+    <g transform="rotate(-42 280 192)">
+      <ellipse cx="280" cy="192" rx="16" ry="11" fill="url(#snakeA)" stroke="#0A0D13" stroke-width="2"/>
     </g>
-  </g>
-
-  <!-- pane 2: security -->
-  <g transform="translate(256,250)">
-    <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.55" stroke-width="3"/>
-    <path d="M 0 -32 L 26 -21 L 26 2 Q 26 25 0 33 Q -26 25 -26 2 L -26 -21 Z"
-          fill="none" stroke="#A78BFA" stroke-width="8" stroke-linejoin="round" filter="url(#glow)"/>
-  </g>
-
-  <!-- pane 3: papers -->
-  <g transform="translate(400,250)">
-    <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#FBBF24" fill-opacity="0.10" stroke="#FBBF24" stroke-opacity="0.55" stroke-width="3"/>
-    <g filter="url(#glow)">
-      <rect x="-22" y="-30" width="44" height="60" rx="8" fill="none" stroke="#FBBF24" stroke-width="8"/>
-      <g stroke="#FBBF24" stroke-width="6" stroke-linecap="round">
-        <line x1="-12" y1="-12" x2="12" y2="-12"/>
-        <line x1="-12" y1="0" x2="12" y2="0"/>
-        <line x1="-12" y1="12" x2="4" y2="12"/>
-      </g>
+    <circle cx="285" cy="188" r="3" fill="#0A0D13"/>
+    <path d="M 295 187 L 308 179 M 295 190 L 309 188" stroke="#DDBB62" stroke-width="3" stroke-linecap="round"/>
+    <g transform="rotate(42 232 188)">
+      <ellipse cx="232" cy="188" rx="16" ry="11" fill="url(#snakeB)" stroke="#0A0D13" stroke-width="2"/>
     </g>
-  </g>
-
-  <!-- labels -->
-  <g font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="23" font-weight="600" text-anchor="middle" letter-spacing="1.4">
-    <text x="112" y="344" fill="#38BDF8">SEARCH</text>
-    <text x="256" y="344" fill="#A78BFA">SECURITY</text>
-    <text x="400" y="344" fill="#FBBF24">PAPERS</text>
-  </g>
-
-  <!-- title -->
-  <g font-family="Segoe UI, Inter, system-ui, sans-serif" text-anchor="middle">
-    <text x="256" y="412" fill="#EAF1FB" font-size="30" font-weight="700">Hermes Skills</text>
-    <text x="256" y="450" fill="#8FB6FF" font-size="21" font-weight="500" letter-spacing="3">WINDOWS PORTS</text>
+    <circle cx="227" cy="184" r="3" fill="#0A0D13"/>
+    <path d="M 217 183 L 204 175 M 217 186 L 203 184" stroke="#D6AC48" stroke-width="3" stroke-linecap="round"/>
   </g>
 </svg>
