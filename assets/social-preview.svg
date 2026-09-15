@@ -102,8 +102,8 @@
         font-family="'Segoe UI', system-ui, sans-serif">WINDOWS PORTS</text>
 
   <g font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace">
-    <text x="580" y="446" font-size="24" fill="#BCC6D4">searxng-search · web-pentest · research-paper-writing</text>
-    <text x="580" y="484" font-size="22" fill="#96A1B2">migrated from the upstream Hermes Agent optional skills</text>
+    <text x="580" y="446" font-size="21" fill="#BCC6D4">searxng-search · web-pentest · research-paper-writing</text>
+    <text x="580" y="484" font-size="21" fill="#96A1B2">migrated from the upstream Hermes Agent optional skills</text>
   </g>
 
   <g stroke="#E4C063" stroke-opacity="0.34" stroke-width="1.8">
