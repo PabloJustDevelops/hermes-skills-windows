@@ -1,0 +1,36 @@
+# SearXNG settings for a private, localhost-only instance.
+# Copy to settings.yml in the SearXNG checkout root and change the secret_key.
+#
+# Schema note: plain-text keys (general.contact_url, brand.*, ...) do NOT accept
+# `false` — omit them instead of disabling them, or SearXNG refuses to start with
+# "Invalid settings.yml / Expected `str`, got `bool`".
+use_default_settings: true
+
+general:
+  debug: false
+  instance_name: "SearXNG local"
+  enable_metrics: false
+
+server:
+  secret_key: "CHANGE_ME_RUN: python -c \"import secrets;print(secrets.token_hex(32))\""
+  limiter: false          # no bot detection: this instance is not exposed
+  public_instance: false
+  bind_address: "127.0.0.1"
+  port: 8888
+  image_proxy: false
+  http_protocol_version: "1.0"
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "en"
+  formats:                # this is what the searxng-search skill consumes
+    - html
+    - json
+
+ui:
+  static_use_hash: true
+
+outgoing:
+  request_timeout: 6.0
+  max_request_timeout: 10.0

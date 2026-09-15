@@ -1,0 +1,30 @@
+diff --git a/searx/valkeydb.py b/searx/valkeydb.py
+index 1cdc8d2..a3dc4df 100644
+--- a/searx/valkeydb.py
++++ b/searx/valkeydb.py
+@@ -19,10 +19,14 @@ A valkey DB connect can be tested by::
+ """
+ 
+ import os
+-import pwd
+ import logging
+ import warnings
+ 
++try:  # Windows port: there is no `pwd` module; it is only used for a log prefix
++    import pwd
++except ImportError:  # pragma: no cover
++    pwd = None
++
+ import valkey
+ from searx import get_setting
+ 
+@@ -60,6 +64,9 @@ def initialize():
+         return True
+     except valkey.exceptions.ValkeyError:
+         _CLIENT = None
++        if pwd is None:  # Windows port: skip the OS-user log prefix
++            logger.exception("can't connect valkey DB ...")
++            return False
+         _pw = pwd.getpwuid(os.getuid())
+         logger.exception("[%s (%s)] can't connect valkey DB ...", _pw.pw_name, _pw.pw_uid)
+     return False

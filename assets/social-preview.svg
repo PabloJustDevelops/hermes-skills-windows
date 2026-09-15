@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Hermes Skills Windows Ports — social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1020"/>
+      <stop offset="0.55" stop-color="#111936"/>
+      <stop offset="1" stop-color="#0C142A"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.22" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo2" cx="0.86" cy="0.88" r="0.5">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#8FB6FF" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="496" height="496" rx="104"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#dots)"/>
+  <rect width="1280" height="640" fill="url(#halo)"/>
+  <rect width="1280" height="640" fill="url(#halo2)"/>
+
+  <!-- icon block (same artwork as logo.svg), vertically centred like the canvas -->
+  <g transform="translate(155,136) scale(0.72)">
+    <g clip-path="url(#frame)">
+      <rect x="8" y="8" width="496" height="496" rx="104" fill="#0B1224" fill-opacity="0.9"/>
+      <rect x="8" y="8" width="496" height="84" fill="#FFFFFF" fill-opacity="0.045"/>
+      <line x1="8" y1="92" x2="504" y2="92" stroke="#8FB6FF" stroke-opacity="0.16" stroke-width="2"/>
+    </g>
+    <rect x="9.5" y="9.5" width="493" height="493" rx="102.5" fill="none" stroke="#38BDF8" stroke-opacity="0.38" stroke-width="3"/>
+    <g>
+      <circle cx="68" cy="50" r="7" fill="#38BDF8" fill-opacity="0.75"/>
+      <circle cx="104" cy="50" r="7" fill="#A78BFA" fill-opacity="0.75"/>
+      <circle cx="140" cy="50" r="7" fill="#FBBF24" fill-opacity="0.75"/>
+    </g>
+    <g transform="translate(112,250)">
+      <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#38BDF8" fill-opacity="0.10" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="3"/>
+      <g fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" filter="url(#glow)">
+        <circle cx="-6" cy="-6" r="25"/>
+        <line x1="12" y1="12" x2="30" y2="30"/>
+      </g>
+    </g>
+    <g transform="translate(256,250)">
+      <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.55" stroke-width="3"/>
+      <path d="M 0 -32 L 26 -21 L 26 2 Q 26 25 0 33 Q -26 25 -26 2 L -26 -21 Z"
+            fill="none" stroke="#A78BFA" stroke-width="8" stroke-linejoin="round" filter="url(#glow)"/>
+    </g>
+    <g transform="translate(400,250)">
+      <rect x="-56" y="-56" width="112" height="112" rx="30" fill="#FBBF24" fill-opacity="0.10" stroke="#FBBF24" stroke-opacity="0.55" stroke-width="3"/>
+      <g filter="url(#glow)">
+        <rect x="-22" y="-30" width="44" height="60" rx="8" fill="none" stroke="#FBBF24" stroke-width="8"/>
+        <g stroke="#FBBF24" stroke-width="6" stroke-linecap="round">
+          <line x1="-12" y1="-12" x2="12" y2="-12"/>
+          <line x1="-12" y1="0" x2="12" y2="0"/>
+          <line x1="-12" y1="12" x2="4" y2="12"/>
+        </g>
+      </g>
+    </g>
+    <g font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="23" font-weight="600" text-anchor="middle" letter-spacing="1.4">
+      <text x="112" y="344" fill="#38BDF8">SEARCH</text>
+      <text x="256" y="344" fill="#A78BFA">SECURITY</text>
+      <text x="400" y="344" fill="#FBBF24">PAPERS</text>
+    </g>
+    <g font-family="Segoe UI, Inter, system-ui, sans-serif" text-anchor="middle">
+      <text x="256" y="412" fill="#EAF1FB" font-size="30" font-weight="700">Hermes Skills</text>
+      <text x="256" y="450" fill="#8FB6FF" font-size="21" font-weight="500" letter-spacing="3">WINDOWS PORTS</text>
+    </g>
+  </g>
+
+  <!-- text block: optical centre matched to the icon block, margins balanced -->
+  <g font-family="Segoe UI, Inter, system-ui, sans-serif" fill="#EAF1FB">
+    <text x="575" y="195" font-size="60" font-weight="700">Hermes Skills</text>
+    <text x="575" y="267" font-size="60" font-weight="700" fill="#38BDF8">Windows Ports</text>
+    <text x="575" y="333" font-size="25" font-weight="600" fill="#C8D4E8">searxng-search · web-pentest · research-paper-writing</text>
+    <text x="575" y="377" font-size="23" fill="#93A3BE">Migrated from the upstream Hermes Agent optional skills (MIT)</text>
+    <text x="575" y="417" font-size="23" fill="#7F8DA6">Python instead of bash · nmap optional · LaTeX toolchain notes</text>
+  </g>
+
+  <!-- pills -->
+  <g font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="20" font-weight="600">
+    <rect x="575" y="455" width="176" height="46" rx="23" fill="#38BDF8" fill-opacity="0.14" stroke="#38BDF8" stroke-opacity="0.5"/>
+    <text x="663" y="485" text-anchor="middle" fill="#7DD3FC">windows 11</text>
+    <rect x="771" y="455" width="160" height="46" rx="23" fill="#A78BFA" fill-opacity="0.14" stroke="#A78BFA" stroke-opacity="0.5"/>
+    <text x="851" y="485" text-anchor="middle" fill="#C4B5FD">python 3.11</text>
+    <rect x="951" y="455" width="200" height="46" rx="23" fill="#FBBF24" fill-opacity="0.14" stroke="#FBBF24" stroke-opacity="0.5"/>
+    <text x="1051" y="485" text-anchor="middle" fill="#FCD34D">mit licensed</text>
+  </g>
+</svg>

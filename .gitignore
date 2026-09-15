@@ -1,0 +1,14 @@
+# Local SearXNG settings: copy settings.example.yml to settings.yml and put your
+# own secret_key in it — it must never be committed.
+searxng-windows/settings.yml
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
